@@ -1,0 +1,32 @@
+Source: python-looseversion
+Section: python
+Priority: optional
+Maintainer: Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>
+Build-Depends: debhelper-compat (= 13)
+  , dh-python
+  , pybuild-plugin-pyproject
+  , python3-hatchling
+  , python3-setuptools
+  , python3-all
+X-Python3-Version: >= 3.2
+Standards-Version: 3.9.6
+Homepage: https://github.com/effigies/looseversion
+Vcs-Git: https://github.com/effigies/looseversion.git
+Vcs-Browser: https://github.com/effigies/looseversion
+
+Package: python3-looseversion
+Architecture: any
+Depends:
+  , ${misc:Depends}
+  , ${shlibs:Depends}
+  , ${python3:Depends}
+Provides: ${python3:Provides}
+Description: Version numbering for anarchists and software realists
+ A backwards/forwards-compatible fork of distutils.version.LooseVersion, for
+ times when PEP-440 isn't what you need.
+ .
+ The goal of this package is to be a drop-in replacement for the original
+ LooseVersion. It implements an identical interface and comparison logic to
+ LooseVersion. The only major change is that a looseversion.LooseVersion is
+ comparable to a distutils.version.LooseVersion, which means tools should not
+ need to worry whether all dependencies that use LooseVersion have migrated.

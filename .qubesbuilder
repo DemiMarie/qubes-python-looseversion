@@ -1,0 +1,8 @@
+vm-bookworm:
+  deb:
+    build:
+    - debian-pkg/debian
+source:
+  files:
+  - url: https://files.pythonhosted.org/packages/source/l/looseversion/looseversion-@VERSION@.tar.gz#/python-looseversion-@VERSION@.tar.gz
+    sha256: looseversion-@VERSION@.tar.gz.sha256

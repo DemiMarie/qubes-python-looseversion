@@ -1,0 +1,5 @@
+python-looseversion (1.2.0-1) unstable; urgency=medium
+
+  * Initial packaging
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Wed, 28 Jun 2023 16:21:28 +0200

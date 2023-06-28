@@ -1,0 +1,11 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: looseversion
+Source: http://github.com/effigies/looseversion
+
+Files: *
+Copyright: 2023 Chris Markiewicz
+License: Python-2.0
+
+Files: debian/*
+Copyright: 2023 Marek Marczykowski-Górecki
+License: Python-2.0
