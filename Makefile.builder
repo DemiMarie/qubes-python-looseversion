@@ -1,6 +1,7 @@
 NO_ARCHIVE := 1
 
 DEBIAN_BUILD_DIRS.bookworm := debian-pkg/debian
+DEBIAN_BUILD_DIRS.trixie := debian-pkg/debian
 DEBIAN_BUILD_DIRS := $(DEBIAN_BUILD_DIRS.$(DIST))
 
 SOURCE_COPY_IN.debian := source-debian-copy-in
